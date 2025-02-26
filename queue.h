@@ -1,9 +1,13 @@
+#pragma once
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <assert.h>
 
-#define MaxQueue 10
-typedef char QDataType;
+struct binarytreenode;//向前声明---Btree包含queue.h---故而不使用extern
+
+//#define MaxQueue 10
+typedef struct binarytreenode* QDataType;
 
 typedef struct queuenode{
     QDataType data;
@@ -35,4 +39,8 @@ void QueuePush(Queue* q,QDataType data);
 //出队--头
 void QueuePop(Queue* q);
 //打印queue
-void QueuePrint(Queue* q);
+//void QueuePrint(Queue* q);
+//头尾值
+QDataType QueueHead(Queue* q);
+QDataType Queuetail(Queue* q);
+
