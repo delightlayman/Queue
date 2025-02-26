@@ -7,7 +7,10 @@ int main(){
     for(int i='a';i<'f';i++){
         QueuePush(&s,i);
     }
+    printf("%d",QueueSzie(&s));
+    putchar('\n');
     QueuePrint(&s);
+
     printf("\n");
     /*DestQueue(&s);
     QueuePrint(&s);*/
@@ -17,7 +20,9 @@ int main(){
          QueuePrint(&s);
         printf("\n");
 
-     }
+    }
+    printf("%d",QueueSzie(&s));
+
 
 
 }

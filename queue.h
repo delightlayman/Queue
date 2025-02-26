@@ -34,5 +34,5 @@ int QueueSzie(Queue* q);
 void QueuePush(Queue* q,QDataType data);
 //出队--头
 void QueuePop();
-
+//打印queue
 void QueuePrint(Queue* q);
